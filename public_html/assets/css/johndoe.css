@@ -12620,10 +12620,9 @@ pre .code {
   position: relative;
   height: 80vh;
   min-height: 600px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/images/0I5A1564.jpg);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/images/_I5A5545.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: inherit;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
@@ -12800,4 +12799,15 @@ pre .code {
   background: #F85C70;
   display: block;
   margin-top: 10px;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
+
+#player {
+  margin: auto;
+  width: 80vw;
+  height: 60vh;
 }
