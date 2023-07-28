@@ -12329,6 +12329,7 @@ p {
 }
 
 .portfolio {
+  margin-top: 60px;
   justify-content: center;
   margin: auto;
   display: grid;
@@ -12343,12 +12344,23 @@ p {
   height: 90%;
   overflow: hidden;
   position: relative;
+  transition: transform 1s ease-in-out;
+  /* Dodajemy animację przekształcenia */
 }
 
 .portfolio-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.portfolio-item.clicked {
+  transform: scale(1.2);
+
+}
+
+.portfolio-item:hover {
+  opacity: 0.6;
 }
 
 @media (max-width: 1200px) {
@@ -12792,6 +12804,7 @@ pre .code {
 }
 
 .video {
+  margin-bottom: 60px;
   display: flex;
   justify-content: center;
 }
